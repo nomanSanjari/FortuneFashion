@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Fashion: Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <!--HEADER STARTS HERE-->
+    <header>
+        <div id="header-container">
+            <nav
+                class="navbar-fluid d-flex flex-wrap justify-content-center mt-3 pb-1 border-bottom bg-light bg-gradient">
+                <a href="#" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-center">
+                    <!--TODO Add company logo here-->
+                    <p class="text-center fs-4 text-decoration-none">Fortune Fashion</p>
+                </a>
+            </nav>
+            <div id="navbar-container">
+                <nav
+                    class="navbar-fluid d-flex flex-wrap justify-content-center py-3 mb-4 mt-3 pt-0 border-bottom bg-light bg-gradient">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item "><a href="home.html" class="nav-link colorPrimary">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="products.html" class="nav-link colorPrimary">Products</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link active colorPrimary"
+                                aria-current="page">Contact
+                                Us</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link colorPrimary">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!--HEADER ENDS HERE-->
+    <!--MAIN START HERE-->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2>Find Us At</h2>
+                <div id="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5131291879725!2d90.36449011498297!3d23.835906084547393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c137d174cb67%3A0x3e29d27569e96f9a!2sFORTUNE%20FASHION!5e0!3m2!1sen!2sbd!4v1625456850378!5m2!1sen!2sbd"
+                        width="1024" height="768" style="border:0; padding: 0;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+                    Contact Form
+                </h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name-Input">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="email-Input">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject-Input">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="message-Input">
+                    </div>
+                    <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+                    <!--TODO Add Functionality for EMAIL-->
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--MAIN ENDS HERE-->
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+$primary-color-blue: blue;
+$primary-color-red: red;
+
+//bad code i had to write to make it work....kind of
+
+header {
+    #header-container {
+        nav {
+            a {
+                p {
+                    color: blue;
+                }
+            }
+            ul {
+                li .active{
+                    color: red;
+                    background-color: transparent;
+                    border: blue 2px solid;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//style declaration for mobile menu
+//lage nai
